@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Activity Tracker - FitZone</title>
+    <link rel="stylesheet" href="/css/tracker.css" />
+</head>
+<body>
+<div class="tracker-container">
+    <h1>🏋️ FitZone Activity Tracker</h1>
+
+    <form id="activityForm">
+        <input type="text" id="activity" placeholder="Activity " required />
+        <input type="number" id="duration" placeholder="Duration (minutes)" required />
+        <input type="number" id="calories" placeholder="Calories Burned" required />
+        <button type="submit">Add Activity</button>
+    </form>
+
+    <h2>📋 Activity Log</h2>
+    <ul id="logList"></ul>
+</div>
+
+<script src="tracker.js"></script>
+</body>
+</html>

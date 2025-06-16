@@ -1,4 +1,4 @@
-package com.Fitness.FitnessApp;
+package com.Fitness.FitnessApp.Controller;
 
 
 import org.springframework.stereotype.Controller;
@@ -9,7 +9,12 @@ public class FitController {
 
     @GetMapping("/login")
     public String Login(){
-        return "index";
+        return "login";
+    }
+
+    @GetMapping("/home")
+    public String home(){
+        return "tracker";
     }
 
     @GetMapping("/signup")
